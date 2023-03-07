@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form action="mailto:mwgabi1@gmail.com" method="post" enctype="multipart/form-data"  >
+            <!-- para agregar archivos -->
+            <table width="auto" border="1" align="center" cellspacing="10" cellpadding="10"  bgcolor="#bdbdbd" >
+                <tr>
+                    <td colspan="6">
+                        <h1 align="center" >Datos Personales</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Nombre</td>
+                    <td colspan="3"> 
+                        <input type="text" name="nombre" value="" size="40" maxlength="">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="3">Apellido</td>
+                    <td colspan="3"> 
+                        <input type="text" name="apellidos" value="" size="40" maxlength="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td >Pasatiempos</td>
+                    <td> 
+                        <!-- Casillas de verificación -->
+                        <input type="checkbox" name="baile" >Bailar <br>
+                        <input type="checkbox" name="baile" >Cantar <br>
+                        <input type="checkbox" name="baile" >Nadar <br>
+                    </td>
+                    <td>Trabaja</td>
+                    <td>
+                        <!-- Botones de opción -->
+                        <input type="radio" name="trabaja" >Si <br>
+                        <input type="radio" name="trabaja" >NO <br>
+
+                    </td>
+                    <td> Provincias</td>
+                    <td>
+                        <!-- Lista desplegable /Combo-->
+                        <select name="provincia" id="provincia">
+                            <option value="San José">San José</option>
+                            <option value="Heredia">Heredia</option>
+                            <option value="Cartago">Cartago</option>
+                            <option value="Limón">Limón</option>
+                            <option value="Puntarenas">Puntarenas</option>
+                            <option value="Guanacaste">Guanacaste</option>
+                            <option value="Alajuela">Alajuela</option>
+                        </select>
+                    </td>              
+                    
+                </tr>
+                <tr>
+                    <td colspan="2"></td>Adjuntar archivos
+                    <td colspan="4">
+                        <input type="file" name="adjunto">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" value="Limpiar formulario">
+                    </td>
+                    <td>
+                        <input type="submit">Enviar Datos
+                    </td>
+                </tr>
+
+
+
+            </table>
+        </form>
+    </section>
+</body>
+</html>
